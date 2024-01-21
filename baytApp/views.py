@@ -61,7 +61,7 @@ class DeleteJobView(generics.DestroyAPIView):
     serializer_class = PremiumJobSerializer
     # permission_classes = [IsAuthenticated]
 class PremiumJobView(APIView):
-    permission_classes = [IsAuthenticated]    
+    # permission_classes = [IsAuthenticated]    
 
     def get(self, request):
         
