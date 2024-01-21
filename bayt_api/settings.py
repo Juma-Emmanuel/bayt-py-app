@@ -16,7 +16,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG")
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "baytadmin.pythonanywhere.com"]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'baytadmin.pythonanywhere.com']
 ALLOWED_HOSTS  += os.environ.get("ALLOWED_HOSTS").split()
 
 # Application definition
@@ -46,29 +46,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'bayt_api.urls'
 
-TEMPLATES = [DisallowedHost at /premium-jobs/
-Invalid HTTP_HOST header: 'baytadmin.pythonanywhere.com'. You may need to add 'baytadmin.pythonanywhere.com' to ALLOWED_HOSTS.
-Request Method:	GET
-Request URL:	https://baytadmin.pythonanywhere.com/premium-jobs/
-Django Version:	4.2.9
-Exception Type:	DisallowedHost
-Exception Value:	
-Invalid HTTP_HOST header: 'baytadmin.pythonanywhere.com'. You may need to add 'baytadmin.pythonanywhere.com' to ALLOWED_HOSTS.
-Exception Location:	/home/baytadmin/venv/lib/python3.10/site-packages/django/http/request.py, line 150, in get_host
-Raised during:	baytApp.views.PremiumJobView
-Python Executable:	/usr/local/bin/uwsgi
-Python Version:	3.10.5
-Python Path:	
-['/home/baytadmin/bayt-py-app',
- '/var/www',
- '.',
- '',
- '/var/www',
- '/usr/local/lib/python310.zip',
- '/usr/local/lib/python3.10',
- '/usr/local/lib/python3.10/lib-dynload',
- '/home/baytadmin/venv/lib/python3.10/site-packages']
-Server time:	Sun, 21 Jan 2024 11:36:14 +0000
+TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
